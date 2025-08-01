@@ -7,6 +7,7 @@ import Layout from "../../Components/Layout"
 
 function MyOrders() {
   const context = useContext(ShoppingCartContext)
+  console.log(context.order)
 
   return (
     <Layout>
@@ -15,7 +16,7 @@ function MyOrders() {
       </div>
         {
           context.order.map((order, index) => (
-            <Link key={index} to={`/my-orders/${order.id}`}>
+            <Link key={index} to={`/my-orders/${index}`}>
               <OrdersCard 
                 totalProducts={order.totalProducts}
                 totalPrice={order.totalPrice}/>
