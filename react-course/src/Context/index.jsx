@@ -72,7 +72,8 @@ export const ShoppingCartProvider = ({children}) => {
             order,
             setOrder,
             searchByTitle, 
-            setSearchByTitle
+            setSearchByTitle,
+            filteredItems
         }}>
             {children}
         </ShoppingCartContext.Provider>
