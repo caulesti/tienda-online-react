@@ -7,7 +7,6 @@ import Layout from "../../Components/Layout"
 
 function MyOrders() {
   const context = useContext(ShoppingCartContext)
-  console.log(context.order)
 
   return (
     <Layout>
